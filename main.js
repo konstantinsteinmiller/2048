@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const missing = 4 - filteredRow.length
         const zeroes = Array(missing).fill(0)
         let newRow = filteredRow.concat(zeroes)
-        console.log('newRow: ', newRow)
         newRow.forEach((tile, index) => {
           squaresList[i + index].innerHTML = tile
         })
@@ -141,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generate()
   }
 
-  function combineRow(type) {
+  function combineRow(/*type*/) {
     for (let i = 0; i < squaresList.length - 1; i++) {
       const nextTileIndex = /*type === 'row' ? */1/* : width*/
       if (squaresList[i].innerHTML === squaresList[i+nextTileIndex].innerHTML) {

@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function checkForWin() {
-    if (squaresList.some((square) => square.innerHTML === '16')) {
+    if (squaresList.some((square) => square.innerHTML === '2048')) {
       resultDisplay.innerHTML = 'You Win!'
       document.removeEventListener('keydown', control)
       Confetti({ particleCount: 100, spread: 70, origin: { y: 0.8 } })

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build-github": "vite build --base=/2048/",
     "preview": "vite preview",
     "deploy": "vite build && surge dist/ --domain 2048-clonex.surge.sh"
   },
